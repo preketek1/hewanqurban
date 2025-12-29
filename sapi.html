@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sapi Siap Dikunjungi - QurbanLangsungKandang</title>
+    <meta name="description" content="Lihat koleksi sapi qurban yang siap dikunjungi langsung di kandang peternak mitra kami. Semua sapi sehat dan sesuai syarat qurban.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <h2><a href="index.html" style="text-decoration: none; color: inherit;">QurbanLangsungKandang</a></h2>
+                    <span class="tagline">Aman Dilihat Langsung</span>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Beranda</a></li>
+                        <li><a href="cara-aman.html" class="nav-link">Cara Aman Beli Qurban</a></li>
+                        <li><a href="sapi.html" class="nav-link active">Sapi Siap Dikunjungi</a></li>
+                        <li><a href="peternak.html" class="nav-link">Peternak Mitra</a></li>
+                        <li><a href="alur.html" class="nav-link">Alur Transaksi</a></li>
+                        <li><a href="kontak.html" class="nav-link">Kontak & Jadwal</a></li>
+                    </ul>
+                </div>
+                
+                <a href="kontak.html" class="btn-cta">
+                    <i class="fas fa-calendar-alt"></i>
+                    Jadwalkan Kunjungan
+                </a>
+                
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>Sapi Siap Dikunjungi</h1>
+                <p>Pilih sapi qurban terbaik yang bisa Anda lihat langsung di kandang peternak</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-content">
+                <h3>Filter Sapi</h3>
+                <div class="filter-options">
+                    <div class="filter-group">
+                        <label>Lokasi:</label>
+                        <select id="location-filter">
+                            <option value="">Semua Lokasi</option>
+                            <option value="desa-makmur">Desa Makmur</option>
+                            <option value="desa-sejahtera">Desa Sejahtera</option>
+                            <option value="desa-berkah">Desa Berkah</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Estimasi Berat:</label>
+                        <select id="weight-filter">
+                            <option value="">Semua Berat</option>
+                            <option value="250-350">250-350 kg</option>
+                            <option value="350-450">350-450 kg</option>
+                            <option value="450+">450+ kg</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Kisaran Harga:</label>
+                        <select id="price-filter">
+                            <option value="">Semua Harga</option>
+                            <option value="15-20">15-20 Juta</option>
+                            <option value="20-25">20-25 Juta</option>
+                            <option value="25+">25+ Juta</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cattle Grid -->
+    <section class="cattle-section">
+        <div class="container">
+            <div class="cattle-grid" id="cattle-grid">
+                <!-- Sapi 1 -->
+                <div class="cattle-card" data-location="desa-makmur" data-weight="300" data-price="18">
+                    <div class="cattle-image">
+                        <img src="assets/images/sapi-1.jpg" alt="Sapi Limousin Jantan" loading="lazy">
+                        <div class="cattle-status">
+                            <span class="status-badge available">Siap Dikunjungi</span>
+                        </div>
+                    </div>
+                    <div class="cattle-info">
+                        <h3>Sapi Limousin Jantan</h3>
+                        <div class="cattle-details">
+                            <div class="detail-item">
+                                <i class="fas fa-weight"></i>
+                                <span>Est. 300-320 kg</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Desa Makmur</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Umur 3 tahun</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-tag"></i>
+                                <span>Rp 18-20 Juta</span>
+                            </div>
+                        </div>
+                        <div class="cattle-farmer">
+                            <i class="fas fa-user"></i>
+                            <span>Pak Budi Santoso</span>
+                        </div>
+                        <div class="cattle-actions">
+                            <a href="detail-sapi.html?id=1" class="btn-detail">
+                                <i class="fas fa-info-circle"></i>
+                                Lihat Detail
+                            </a>
+                            <a href="kontak.html?sapi=limousin-1" class="btn-contact">
+                                <i class="fas fa-calendar-check"></i>
+                                Atur Kunjungan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sapi 2 -->
+                <div class="cattle-card" data-location="desa-sejahtera" data-weight="380" data-price="22">
+                    <div class="cattle-image">
+                        <img src="assets/images/sapi-2.jpg" alt="Sapi Simental Betina" loading="lazy">
+                        <div class="cattle-status">
+                            <span class="status-badge available">Siap Dikunjungi</span>
+                        </div>
+                    </div>
+                    <div class="cattle-info">
+                        <h3>Sapi Simental Betina</h3>
+                        <div class="cattle-details">
+                            <div class="detail-item">
+                                <i class="fas fa-weight"></i>
+                                <span>Est. 380-400 kg</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Desa Sejahtera</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Umur 4 tahun</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-tag"></i>
+                                <span>Rp 22-25 Juta</span>
+                            </div>
+                        </div>
+                        <div class="cattle-farmer">
+                            <i class="fas fa-user"></i>
+                            <span>Pak Ahmad Wijaya</span>
+                        </div>
+                        <div class="cattle-actions">
+                            <a href="detail-sapi.html?id=2" class="btn-detail">
+                                <i class="fas fa-info-circle"></i>
+                                Lihat Detail
+                            </a>
+                            <a href="kontak.html?sapi=simental-1" class="btn-contact">
+                                <i class="fas fa-calendar-check"></i>
+                                Atur Kunjungan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sapi 3 -->
+                <div class="cattle-card" data-location="desa-berkah" data-weight="450" data-price="28">
+                    <div class="cattle-image">
+                        <img src="assets/images/sapi-3.jpg" alt="Sapi Brahman Jantan" loading="lazy">
+                        <div class="cattle-status">
+                            <span class="status-badge available">Siap Dikunjungi</span>
+                        </div>
+                    </div>
+                    <div class="cattle-info">
+                        <h3>Sapi Brahman Jantan</h3>
+                        <div class="cattle-details">
+                            <div class="detail-item">
+                                <i class="fas fa-weight"></i>
+                                <span>Est. 450-480 kg</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Desa Berkah</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Umur 5 tahun</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-tag"></i>
+                                <span>Rp 28-32 Juta</span>
+                            </div>
+                        </div>
+                        <div class="cattle-farmer">
+                            <i class="fas fa-user"></i>
+                            <span>Pak Slamet Riyadi</span>
+                        </div>
+                        <div class="cattle-actions">
+                            <a href="detail-sapi.html?id=3" class="btn-detail">
+                                <i class="fas fa-info-circle"></i>
+                                Lihat Detail
+                            </a>
+                            <a href="kontak.html?sapi=brahman-1" class="btn-contact">
+                                <i class="fas fa-calendar-check"></i>
+                                Atur Kunjungan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sapi 4 -->
+                <div class="cattle-card" data-location="desa-makmur" data-weight="320" data-price="19">
+                    <div class="cattle-image">
+                        <img src="assets/images/sapi-4.jpg" alt="Sapi Ongole Jantan" loading="lazy">
+                        <div class="cattle-status">
+                            <span class="status-badge available">Siap Dikunjungi</span>
+                        </div>
+                    </div>
+                    <div class="cattle-info">
+                        <h3>Sapi Ongole Jantan</h3>
+                        <div class="cattle-details">
+                            <div class="detail-item">
+                                <i class="fas fa-weight"></i>
+                                <span>Est. 320-340 kg</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Desa Makmur</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Umur 3.5 tahun</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-tag"></i>
+                                <span>Rp 19-22 Juta</span>
+                            </div>
+                        </div>
+                        <div class="cattle-farmer">
+                            <i class="fas fa-user"></i>
+                            <span>Pak Budi Santoso</span>
+                        </div>
+                        <div class="cattle-actions">
+                            <a href="detail-sapi.html?id=4" class="btn-detail">
+                                <i class="fas fa-info-circle"></i>
+                                Lihat Detail
+                            </a>
+                            <a href="kontak.html?sapi=ongole-1" class="btn-contact">
+                                <i class="fas fa-calendar-check"></i>
+                                Atur Kunjungan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sapi 5 -->
+                <div class="cattle-card" data-location="desa-sejahtera" data-weight="360" data-price="21">
+                    <div class="cattle-image">
+                        <img src="assets/images/sapi-5.jpg" alt="Sapi Bali Betina" loading="lazy">
+                        <div class="cattle-status">
+                            <span class="status-badge available">Siap Dikunjungi</span>
+                        </div>
+                    </div>
+                    <div class="cattle-info">
+                        <h3>Sapi Bali Betina</h3>
+                        <div class="cattle-details">
+                            <div class="detail-item">
+                                <i class="fas fa-weight"></i>
+                                <span>Est. 360-380 kg</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Desa Sejahtera</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Umur 4 tahun</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-tag"></i>
+                                <span>Rp 21-24 Juta</span>
+                            </div>
+                        </div>
+                        <div class="cattle-farmer">
+                            <i class="fas fa-user"></i>
+                            <span>Pak Ahmad Wijaya</span>
+                        </div>
+                        <div class="cattle-actions">
+                            <a href="detail-sapi.html?id=5" class="btn-detail">
+                                <i class="fas fa-info-circle"></i>
+                                Lihat Detail
+                            </a>
+                            <a href="kontak.html?sapi=bali-1" class="btn-contact">
+                                <i class="fas fa-calendar-check"></i>
+                                Atur Kunjungan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sapi 6 -->
+                <div class="cattle-card" data-location="desa-berkah" data-weight="420" data-price="26">
+                    <div class="cattle-image">
+                        <img src="assets/images/sapi-6.jpg" alt="Sapi Limousin Betina" loading="lazy">
+                        <div class="cattle-status">
+                            <span class="status-badge available">Siap Dikunjungi</span>
+                        </div>
+                    </div>
+                    <div class="cattle-info">
+                        <h3>Sapi Limousin Betina</h3>
+                        <div class="cattle-details">
+                            <div class="detail-item">
+                                <i class="fas fa-weight"></i>
+                                <span>Est. 420-450 kg</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Desa Berkah</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Umur 4.5 tahun</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-tag"></i>
+                                <span>Rp 26-29 Juta</span>
+                            </div>
+                        </div>
+                        <div class="cattle-farmer">
+                            <i class="fas fa-user"></i>
+                            <span>Pak Slamet Riyadi</span>
+                        </div>
+                        <div class="cattle-actions">
+                            <a href="detail-sapi.html?id=6" class="btn-detail">
+                                <i class="fas fa-info-circle"></i>
+                                Lihat Detail
+                            </a>
+                            <a href="kontak.html?sapi=limousin-2" class="btn-contact">
+                                <i class="fas fa-calendar-check"></i>
+                                Atur Kunjungan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Important Note -->
+    <section class="note-section">
+        <div class="container">
+            <div class="note-card">
+                <div class="note-icon">
+                    <i class="fas fa-info-circle"></i>
+                </div>
+                <div class="note-content">
+                    <h3>Catatan Penting</h3>
+                    <ul>
+                        <li><strong>Harga & keputusan final ditentukan di lokasi kandang</strong> setelah Anda melihat langsung kondisi sapi</li>
+                        <li>Estimasi berat dapat berbeda dengan berat aktual saat penimbangan</li>
+                        <li>Tidak ada kewajiban membeli setelah berkunjung ke kandang</li>
+                        <li>Semua transaksi dilakukan langsung dengan peternak, bukan melalui website</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Tertarik dengan Salah Satu Sapi?</h2>
+                <p>Jadwalkan kunjungan Anda untuk melihat langsung kondisi sapi dan bertemu dengan peternak</p>
+                <div class="cta-buttons">
+                    <a href="kontak.html" class="btn-primary">
+                        <i class="fas fa-calendar-check"></i>
+                        Jadwalkan Kunjungan
+                    </a>
+                    <a href="cara-aman.html" class="btn-outline">
+                        <i class="fas fa-shield-alt"></i>
+                        Pelajari Cara Aman Beli
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>QurbanLangsungKandang</h3>
+                    <p>Aman Dilihat Langsung, Transaksi di Kandang</p>
+                    <p class="footer-note">
+                        <strong>Penting:</strong> Kami tidak menerima pembayaran melalui website. 
+                        Semua transaksi dilakukan langsung dengan peternak di kandang.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>Menu Utama</h4>
+                    <ul>
+                        <li><a href="cara-aman.html">Cara Aman Beli Qurban</a></li>
+                        <li><a href="sapi.html">Sapi Siap Dikunjungi</a></li>
+                        <li><a href="peternak.html">Peternak Mitra</a></li>
+                        <li><a href="alur.html">Alur Transaksi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Hubungi Kami</h4>
+                    <p><i class="fab fa-whatsapp"></i> WhatsApp: +62 812-3456-7890</p>
+                    <p><i class="fas fa-clock"></i> Jam Layanan: 08:00 - 20:00 WIB</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Desa Kandang, Kab. Qurban</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 QurbanLangsungKandang. Media informasi peternak qurban desa.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/cattle-filter.js"></script>
+</body>
+</html>

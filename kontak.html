@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak & Jadwal Kunjungan - QurbanLangsungKandang</title>
+    <meta name="description" content="Hubungi kami untuk jadwalkan kunjungan ke kandang peternak. WhatsApp, lokasi, dan jam layanan tersedia.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <h2><a href="index.html" style="text-decoration: none; color: inherit;">QurbanLangsungKandang</a></h2>
+                    <span class="tagline">Aman Dilihat Langsung</span>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Beranda</a></li>
+                        <li><a href="cara-aman.html" class="nav-link">Cara Aman Beli Qurban</a></li>
+                        <li><a href="sapi.html" class="nav-link">Sapi Siap Dikunjungi</a></li>
+                        <li><a href="peternak.html" class="nav-link">Peternak Mitra</a></li>
+                        <li><a href="alur.html" class="nav-link">Alur Transaksi</a></li>
+                        <li><a href="kontak.html" class="nav-link active">Kontak & Jadwal</a></li>
+                    </ul>
+                </div>
+                
+                <a href="#jadwal-form" class="btn-cta">
+                    <i class="fas fa-calendar-alt"></i>
+                    Jadwalkan Kunjungan
+                </a>
+                
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>Kontak & Jadwal Kunjungan</h1>
+                <p>Hubungi kami untuk mengatur jadwal kunjungan ke kandang peternak</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section class="contact-methods-section">
+        <div class="container">
+            <div class="contact-methods-grid">
+                <div class="contact-method whatsapp">
+                    <div class="method-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>Cara tercepat untuk menghubungi kami</p>
+                    <div class="method-info">
+                        <strong>+62 812-3456-7890</strong>
+                    </div>
+                    <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20jadwalkan%20kunjungan%20ke%20kandang%20untuk%20melihat%20sapi%20qurban" 
+                       class="btn-method" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        Chat Sekarang
+                    </a>
+                </div>
+
+                <div class="contact-method phone">
+                    <div class="method-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Telepon</h3>
+                    <p>Hubungi langsung untuk konsultasi</p>
+                    <div class="method-info">
+                        <strong>+62 812-3456-7890</strong>
+                    </div>
+                    <a href="tel:+6281234567890" class="btn-method">
+                        <i class="fas fa-phone"></i>
+                        Telepon Sekarang
+                    </a>
+                </div>
+
+                <div class="contact-method location">
+                    <div class="method-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Lokasi Kantor</h3>
+                    <p>Alamat kantor koordinasi</p>
+                    <div class="method-info">
+                        <strong>Desa Kandang, Kec. Qurban<br>Kab. Berkah, Jawa Tengah</strong>
+                    </div>
+                    <a href="https://maps.google.com/?q=Desa+Kandang+Kec+Qurban" class="btn-method" target="_blank">
+                        <i class="fas fa-map"></i>
+                        Lihat di Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Operating Hours -->
+    <section class="operating-hours-section">
+        <div class="container">
+            <div class="operating-hours-content">
+                <div class="hours-info">
+                    <h2>Jam Layanan</h2>
+                    <div class="hours-grid">
+                        <div class="hours-item">
+                            <div class="day">Senin - Jumat</div>
+                            <div class="time">08:00 - 20:00 WIB</div>
+                        </div>
+                        <div class="hours-item">
+                            <div class="day">Sabtu - Minggu</div>
+                            <div class="time">08:00 - 18:00 WIB</div>
+                        </div>
+                        <div class="hours-item special">
+                            <div class="day">Hari Libur Nasional</div>
+                            <div class="time">09:00 - 17:00 WIB</div>
+                        </div>
+                    </div>
+                    <div class="hours-note">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Kunjungan ke kandang dapat diatur di luar jam layanan dengan pemberitahuan sebelumnya</p>
+                    </div>
+                </div>
+                <div class="hours-image">
+                    <img src="assets/images/office-hours.jpg" alt="Jam Layanan" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Form -->
+    <section class="schedule-form-section" id="jadwal-form">
+        <div class="container">
+            <div class="form-header">
+                <h2>Jadwalkan Kunjungan Anda</h2>
+                <p>Isi form di bawah ini untuk mengatur jadwal kunjungan ke kandang peternak</p>
+            </div>
+            
+            <div class="form-container">
+                <form class="schedule-form" id="scheduleForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nama">Nama Lengkap *</label>
+                            <input type="text" id="nama" name="nama" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telepon">Nomor WhatsApp *</label>
+                            <input type="tel" id="telepon" name="telepon" required placeholder="08123456789">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="tanggal">Tanggal Kunjungan *</label>
+                            <input type="date" id="tanggal" name="tanggal" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="waktu">Waktu Kunjungan *</label>
+                            <select id="waktu" name="waktu" required>
+                                <option value="">Pilih Waktu</option>
+                                <option value="08:00">08:00 WIB</option>
+                                <option value="09:00">09:00 WIB</option>
+                                <option value="10:00">10:00 WIB</option>
+                                <option value="11:00">11:00 WIB</option>
+                                <option value="13:00">13:00 WIB</option>
+                                <option value="14:00">14:00 WIB</option>
+                                <option value="15:00">15:00 WIB</option>
+                                <option value="16:00">16:00 WIB</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sapi-minat">Sapi yang Diminati</label>
+                        <select id="sapi-minat" name="sapi-minat">
+                            <option value="">Belum ada pilihan khusus</option>
+                            <option value="limousin">Sapi Limousin</option>
+                            <option value="simental">Sapi Simental</option>
+                            <option value="brahman">Sapi Brahman</option>
+                            <option value="ongole">Sapi Ongole</option>
+                            <option value="bali">Sapi Bali</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lokasi-pilihan">Lokasi Kandang Pilihan</label>
+                        <select id="lokasi-pilihan" name="lokasi-pilihan">
+                            <option value="">Semua lokasi</option>
+                            <option value="desa-makmur">Desa Makmur (Pak Budi)</option>
+                            <option value="desa-sejahtera">Desa Sejahtera (Pak Ahmad)</option>
+                            <option value="desa-berkah">Desa Berkah (Pak Slamet)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jumlah-orang">Jumlah Orang yang Ikut</label>
+                        <select id="jumlah-orang" name="jumlah-orang">
+                            <option value="1">1 orang</option>
+                            <option value="2">2 orang</option>
+                            <option value="3">3 orang</option>
+                            <option value="4">4 orang</option>
+                            <option value="5+">5+ orang</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="catatan">Catatan Tambahan</label>
+                        <textarea id="catatan" name="catatan" rows="4" 
+                                  placeholder="Tuliskan pertanyaan khusus atau permintaan lainnya..."></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-calendar-check"></i>
+                            Kirim Jadwal Kunjungan
+                        </button>
+                        <p class="form-note">
+                            <i class="fas fa-info-circle"></i>
+                            Setelah mengirim, kami akan menghubungi Anda via WhatsApp untuk konfirmasi
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Lokasi Kandang Peternak</h2>
+            <div class="map-grid">
+                <div class="map-item">
+                    <h3>Desa Makmur</h3>
+                    <p>Kandang Pak Budi Santoso</p>
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Peta akan dimuat di sini</p>
+                        <a href="https://maps.google.com/?q=Desa+Makmur" target="_blank" class="btn-map">
+                            Buka di Google Maps
+                        </a>
+                    </div>
+                </div>
+                <div class="map-item">
+                    <h3>Desa Sejahtera</h3>
+                    <p>Kandang Pak Ahmad Wijaya</p>
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Peta akan dimuat di sini</p>
+                        <a href="https://maps.google.com/?q=Desa+Sejahtera" target="_blank" class="btn-map">
+                            Buka di Google Maps
+                        </a>
+                    </div>
+                </div>
+                <div class="map-item">
+                    <h3>Desa Berkah</h3>
+                    <p>Kandang Pak Slamet Riyadi</p>
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Peta akan dimuat di sini</p>
+                        <a href="https://maps.google.com/?q=Desa+Berkah" target="_blank" class="btn-map">
+                            Buka di Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact -->
+    <section class="quick-contact-section">
+        <div class="container">
+            <div class="quick-contact-content">
+                <h2>Butuh Bantuan Segera?</h2>
+                <p>Tim kami siap membantu Anda 24/7 melalui WhatsApp</p>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20butuh%20bantuan%20segera%20terkait%20sapi%20qurban" 
+                   class="btn-quick-contact" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    Chat WhatsApp Sekarang
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>QurbanLangsungKandang</h3>
+                    <p>Aman Dilihat Langsung, Transaksi di Kandang</p>
+                    <p class="footer-note">
+                        <strong>Penting:</strong> Kami tidak menerima pembayaran melalui website. 
+                        Semua transaksi dilakukan langsung dengan peternak di kandang.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>Menu Utama</h4>
+                    <ul>
+                        <li><a href="cara-aman.html">Cara Aman Beli Qurban</a></li>
+                        <li><a href="sapi.html">Sapi Siap Dikunjungi</a></li>
+                        <li><a href="peternak.html">Peternak Mitra</a></li>
+                        <li><a href="alur.html">Alur Transaksi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Hubungi Kami</h4>
+                    <p><i class="fab fa-whatsapp"></i> WhatsApp: +62 812-3456-7890</p>
+                    <p><i class="fas fa-clock"></i> Jam Layanan: 08:00 - 20:00 WIB</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Desa Kandang, Kab. Qurban</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 QurbanLangsungKandang. Media informasi peternak qurban desa.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/contact-form.js"></script>
+</body>
+</html>
